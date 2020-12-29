@@ -1,8 +1,8 @@
 I think there are a bunch of resources out there that go _totally wild_ with a specific branch setup or whatever, but are less about the system as a whole and often are sort of uniformly opinionated.
 
-Here are some things I think make sense _in the system_. Read them as geared toward a long-lived, continuously-deployed product, like a web application or API.
+Here are some things I think make sense as recommendations. Read them as geared toward a long-lived, continuously-deployed product, like a web application or API.
 
-These are opinionated: there are probably other patterns other people use. But at the same time, they're not trying to be fancy or extreme. A lot of teams probably already do something like this.
+These recommendations are opinionated. But they're not fancy or extreme. A lot of teams probably already do something like this.
 
 ## Branches
 
