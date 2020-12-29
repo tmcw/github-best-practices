@@ -54,3 +54,11 @@ There's the main branch, called `main` or `master`. And then there are feature b
 A good example is if someone puts up a PR and someone else decides that, instead of giving extensive PR feedback, they might as well just suggest all the changes and improvements they see are necessary. You can do a little of that with GitHub's suggestions system in PRs, but it's kind of limited.
 
 But **don't go beyond that**. Don't create feature branches on feature branches on bug branches. Any kind of branch structure more than one step deep gets incredibly hard to review, maintain, and merge. If a feature relies on some other feature, either work on them in the same branch, or merge one branch and them create a new branch from `main`.
+
+### Opinionated: commit messages should be meaningful
+
+Other people think that commit messages _must be sentences in the present tense with x, y, and z_. Perhaps, but I think it's more important that commit messages just aren't terrible. So no commits like "updating file.js". But "Fixing dotheFunction off-by-one" is a pretty decent commit message.
+
+Tools that commit for you, and create characteristically terrible commit messages by default, are becoming popular. This is, of course, bad. And in that case, it's vital to use squash or rebase to rewrite those bad commit messages into something a a little more useful.
+
+But individual commit messages don't need to be some sort of fine art: the best tool for understanding changes in a repository is the Pull Request that commit came from, which, per the previous advice, better have a well-written description.
