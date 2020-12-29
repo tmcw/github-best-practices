@@ -76,3 +76,9 @@ There are exceptions, of course - if folks are out of the office, or a PR needs 
 Core documentation shouldn't live in a wiki, or Notion, or somewhere else: it should live in the repository, alongside code, in Markdown. This helps make it clear which documentation belongs to which point in time. Wikis easily fall out of date, and documentation that isn't in the repo won't get downloaded with the repo.
 
 Try to keep it simple. Fancy tools for writing exist, but plain-text or Markdown should be the format of the vast majority of developer documentation.
+
+### Unopinionated: it really doesn't matter if you delete branches
+
+Some people are careful to delete branches after Pull Requests are merged, and some aren't. GitHub has added some additional magic on top of git so that you can delete a branch from a repository but then recover it.
+
+Deleting branches is useful for the pretty rare case where branch names conflict - you work on something locally `git push origin` it, and the repository already has a branch with that name. That seems pretty rare, and you can just delete the branch then, if you want. Whether you delete branches or not doesn't seem to matter enough to make a rule.
