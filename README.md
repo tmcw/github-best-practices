@@ -4,24 +4,6 @@ Here are some things I think make sense _in the system_. Read them as geared tow
 
 These are opinionated: there are probably other patterns other people use. But at the same time, they're not trying to be fancy or extreme. A lot of teams probably already do something like this.
 
-- [Branches](#branches)
-  * [Opinionated: don't branch off a branch off a branch](#opinionated--don-t-branch-off-a-branch-off-a-branch)
-  * [Unopinionated: branch naming](#unopinionated--branch-naming)
-  * [Unopinionated: it really doesn't matter if you delete branches](#unopinionated--it-really-doesn-t-matter-if-you-delete-branches)
-- [Issues & Milestones](#issues---milestones)
-  * [Opinionated: everything has a description](#opinionated--everything-has-a-description)
-  * [Opinionated: Pull requests reference issues](#opinionated--pull-requests-reference-issues)
-- [Project management](#project-management)
-  * [Unopinionated: "Projects view" for individual repos](#unopinionated---projects-view--for-individual-repos)
-  * [Opinionated: use milestones for bounded chunks of work and labels for categories. Do not mix them.](#opinionated--use-milestones-for-bounded-chunks-of-work-and-labels-for-categories-do-not-mix-them)
-- [PRs](#prs)
-  * [Unopinionated: squash, merge, and rebase](#unopinionated--squash--merge--and-rebase)
-  * [Opinionated: PR authors should be the one to merge their PRs](#opinionated--pr-authors-should-be-the-one-to-merge-their-prs)
-- [Commits](#commits)
-  * [Opinionated: commit messages should be meaningful](#opinionated--commit-messages-should-be-meaningful)
-- [Documentation](#documentation)
-  * [Opinionated: use readme files in the repository for documentation](#opinionated--use-readme-files-in-the-repository-for-documentation)
-
 ## Branches
 
 ### Opinionated: don't branch off a branch off a branch
