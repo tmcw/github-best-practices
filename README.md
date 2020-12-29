@@ -62,3 +62,11 @@ Other people think that commit messages _must be sentences in the present tense 
 Tools that commit for you, and create characteristically terrible commit messages by default, are becoming popular. This is, of course, bad. And in that case, it's vital to use squash or rebase to rewrite those bad commit messages into something a a little more useful.
 
 But individual commit messages don't need to be some sort of fine art: the best tool for understanding changes in a repository is the Pull Request that commit came from, which, per the previous advice, better have a well-written description.
+
+### Opinionated: PR authors should be the one to merge their PRs
+
+Obviously, if only some users have the ability to commit to a repository, then they have to merge other people's PRs.
+
+But in the common setup: technically anyone in a normal GitHub repo can merge any PR. So who should? The PR author is the most practical answer. If the repository does continuous deployment, this makes the person overseeing that automatic deploy the same person with knowledge of what new code is being deployed. If the tests fail as soon as the PR is merged, the PR author is the one responsible for fixing them, and so on.
+
+There are exceptions, of course - if folks are out of the office, or a PR needs to be merged in a hurry, or something else. But the best norm is: author merges.
