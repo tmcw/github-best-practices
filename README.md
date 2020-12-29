@@ -70,3 +70,9 @@ Obviously, if only some users have the ability to commit to a repository, then t
 But in the common setup: technically anyone in a normal GitHub repo can merge any PR. So who should? The PR author is the most practical answer. If the repository does continuous deployment, this makes the person overseeing that automatic deploy the same person with knowledge of what new code is being deployed. If the tests fail as soon as the PR is merged, the PR author is the one responsible for fixing them, and so on.
 
 There are exceptions, of course - if folks are out of the office, or a PR needs to be merged in a hurry, or something else. But the best norm is: author merges.
+
+### Opinionated: use readme files in the repository for documentation
+
+Core documentation shouldn't live in a wiki, or Notion, or somewhere else: it should live in the repository, alongside code, in Markdown. This helps make it clear which documentation belongs to which point in time. Wikis easily fall out of date, and documentation that isn't in the repo won't get downloaded with the repo.
+
+Try to keep it simple. Fancy tools for writing exist, but plain-text or Markdown should be the format of the vast majority of developer documentation.
