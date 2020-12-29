@@ -77,6 +77,12 @@ But in the common setup: technically anyone in a normal GitHub repo can merge an
 
 There are exceptions, of course - if folks are out of the office, or a PR needs to be merged in a hurry, or something else. But the best norm is: author merges.
 
+### Opinionated: small, fast, single-idea pull requests
+
+Pull requests are ideally short, don't stay open for longer than a few days, and capture a single idea. Gigantic requests aren't easily reviewed and have the tendency to cause chaos when they get merged - causing conflicts for other PRs, making it hard to hunt down the root cause of any new regressions.
+
+Some ideas are big, so their pull requests can't be that short. But at least focus on capturing a single idea. PRs shouldn't mix routines like code formatting or cosmetic tweaks with new feature development. They shouldn't include a bugfix in one part of the code, and a feature in another. If you notice something that you want to do while writing a PR, that doesn't fit into the idea of that PR, open an issue or create a separate PR for it. Don't combine multiple ideas into the same chunk of work.
+
 ## Commits
 
 ### Opinionated: commit messages should be meaningful
