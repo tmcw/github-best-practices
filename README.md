@@ -26,6 +26,12 @@ Some people are careful to delete branches after Pull Requests are merged, and s
 
 Deleting branches is useful for the pretty rare case where branch names conflict - you work on something locally `git push origin` it, and the repository already has a branch with that name. That seems pretty rare, and you can just delete the branch then, if you want. Whether you delete branches or not doesn't seem to matter enough to make a rule.
 
+## Tests
+
+### Opinionated: if you have tests, your main branch should always pass them
+
+Failing tests should be an absolute veto for any pull request. Tests can fail in development branches, but there should be no period during which the main branch of your repository has failures in the test suite. If it fails because of flaky tests, the reasons for non-deterministic test behavior should be pinned down and solved.
+
 ## Issues & Milestones
 
 ### Opinionated: everything has a description
