@@ -91,6 +91,14 @@ Some ideas are big, so their pull requests can't be that short. But at least foc
 
 ## Commits
 
+### Opinionated: commit often
+
+Don't keep lots of work in your local copy of the code: commit and push it to GitHub, continously. If you do a chunk of work - a half hour or an hour, and you're walking away from your computer to make coffee, commit your code. If you finish a part of a feature, commit your code. Commits are free - you can make a lot of them.
+
+I've encountered several instances where people will wait to commit their code until it's nice and cleaned up. This is an instinct that people whould avoid. A coworker might create a helpful branch with fixes for the work that's on GitHub, but then when it's time to accept those changes, you realize that you've already changed that file, deleted it, or made the fix yourself. There's also some chance that you'll lose your computer before pushing that commit, or realize that you made a mistake halfway through a project and want to revert to an earlier point in time. If you just do one "big-bang" commit with all the code, this doesn't work.
+
+The code on GitHub should, as much as possible, be the same as the code on your computer. It's okay if the code isn't perfect all the time: refining, publishing, and accepting code is the job of pull requests, not commits.
+
 ### Opinionated: commit messages should be meaningful
 
 Other people think that commit messages _must be sentences in the present tense with x, y, and z_. Perhaps, but I think it's more important that commit messages just aren't terrible. So no commits like "updating file.js". But "Fixing dotheFunction off-by-one" is a pretty decent commit message.
