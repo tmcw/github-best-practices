@@ -115,3 +115,12 @@ Core documentation shouldn't live in a wiki, or Notion, or somewhere else: it sh
 
 Try to keep it simple. Fancy tools for writing exist, but plain-text or Markdown should be the format of the vast majority of developer documentation.
 
+## Content
+
+### Opinionated: don't put big binary files in git
+
+Git, by itself, is not a good system for managing binary files. If you use it to store your Photoshop or data files, the size of your git repository will rocket and it'll be slow to clone it and sometimes even hard to store it on your hard drive. Git keeps all the versions of everything, and is not efficient at doing that with big binary files.
+
+If you want to version large files and keep them in a repository, [use Git LFS](https://docs.github.com/en/github/managing-large-files/configuring-git-large-file-storage) and configure it to store the kinds of large files you'll be managing. This will save you from the inefficiency and risks of big binaries in Git.
+
+Otherwise, if the files don't need to be versioned or stored in Git, you can use releases, or an external file storage system like S3 to store them.
